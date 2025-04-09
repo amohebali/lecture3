@@ -7,3 +7,6 @@ def index(request):
 
 def pejman(request):
     return HttpResponse ("Hello pejman!")
+
+def greet(request,name):
+    return HttpResponse(f"Hello {name.capitalize()}!")
